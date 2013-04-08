@@ -51,6 +51,53 @@
     <Compile Include="CovarianceAndContraVariance.Designer.cs">
       <DependentUpon>CovarianceAndContraVariance.cs</DependentUpon>
     </Compile>
+    <Compile Include="DesignPatterns\ChainOfResponsibility\AbstractHandler.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\CharacterHandler.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\DigitalHandler.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPatterns\ChainOfResponsibility\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPatterns\ChainOfResponsibility\Service.cs" />
+    <Compile Include="DesignPatterns\Command\AEffectCommand.cs" />
+    <Compile Include="DesignPatterns\Command\BEffectCommand.cs" />
+    <Compile Include="DesignPatterns\Command\DrawingImpl.cs" />
+    <Compile Include="DesignPatterns\Command\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPatterns\Command\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPatterns\Command\ICommand.cs" />
+    <Compile Include="DesignPatterns\Command\IDrawing.cs" />
+    <Compile Include="DesignPatterns\Command\Service.cs" />
+    <Compile Include="DesignPatterns\Mediator\AbstractChatRoom.cs" />
+    <Compile Include="DesignPatterns\Mediator\ChatRoom.cs" />
+    <Compile Include="DesignPatterns\Mediator\Director.cs" />
+    <Compile Include="DesignPatterns\Mediator\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPatterns\Mediator\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPatterns\Mediator\Participant.cs" />
+    <Compile Include="DesignPatterns\Mediator\Service.cs" />
+    <Compile Include="DesignPatterns\Mediator\VP.cs" />
+    <Compile Include="DesignPatterns\Visitor\Customer.cs" />
+    <Compile Include="DesignPatterns\Visitor\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPatterns\Visitor\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPatterns\Visitor\IVisitable.cs" />
+    <Compile Include="DesignPatterns\Visitor\IVisitor.cs" />
+    <Compile Include="DesignPatterns\Visitor\Member.cs" />
+    <Compile Include="DesignPatterns\Visitor\Service.cs" />
+    <Compile Include="DesignPatterns\Visitor\VIP.cs" />
+    <Compile Include="DesignPatterns\Visitor\VisitorImpl.cs" />
     <Compile Include="ExplicitInterfaceImplementation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +114,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CovarianceAndContraVariance.resx">
       <DependentUpon>CovarianceAndContraVariance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPatterns\ChainOfResponsibility\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPatterns\Command\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPatterns\Mediator\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignPatterns\Visitor\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExplicitInterfaceImplementation.resx">
       <DependentUpon>ExplicitInterfaceImplementation.cs</DependentUpon>
@@ -85,6 +144,10 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="DesignPatterns\ChainOfResponsibility\ChainOfResponsibility.cd" />
+    <None Include="DesignPatterns\Command\Command.cd" />
+    <None Include="DesignPatterns\Mediator\Mediator.cd" />
+    <None Include="DesignPatterns\Visitor\Visitor.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,6 +158,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
